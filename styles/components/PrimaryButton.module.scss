@@ -1,0 +1,19 @@
+.PrimaryButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    border-style: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #393939;
+
+    svg {
+        width: 1.8rem;
+        fill: white;
+    }
+}

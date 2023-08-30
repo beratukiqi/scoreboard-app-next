@@ -1,0 +1,9 @@
+@import "../mixins";
+@import "../variables";
+
+.HeaderMenu {
+    @include flexSpaceBetween(row);
+    padding: 1rem;
+    max-width: 55rem;
+    margin: auto;
+}

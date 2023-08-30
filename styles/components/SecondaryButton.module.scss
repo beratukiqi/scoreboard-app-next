@@ -1,0 +1,19 @@
+@import "../mixins";
+
+.SecondaryButton {
+    @include flexCenter(row);
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    border-style: none;
+    background-color: #a3e5dd;
+    color: #393939;
+    font-weight: 700;
+    position: relative;
+
+    svg {
+        position: absolute;
+        right: 0.5rem;
+    }
+}

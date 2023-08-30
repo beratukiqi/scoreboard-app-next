@@ -1,0 +1,49 @@
+@import "variables";
+
+@mixin flexCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexSpaceBetween($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin h1 {
+    font-size: $font-size-h1;
+    color: $color-h1;
+    font-family: $font-family-headings;
+    line-height: $line-height-headings;
+}
+
+@mixin h2 {
+    font-size: $font-size-h2;
+    color: $color-h2;
+    font-family: $font-family-headings;
+    line-height: $line-height-headings;
+}
+
+@mixin h3 {
+    font-size: $font-size-h3;
+    color: $color-h3;
+    font-family: $font-family-headings;
+    line-height: $line-height-headings;
+}
+
+@mixin p {
+    font-size: $font-size-paragraph;
+    color: $color-paragraph;
+    font-family: $font-family-paragraph;
+    line-height: $line-height-paragraph;
+}
+
+@mixin pageContainer($background-color) {
+    background-color: $background-color;
+    padding: 1rem;
+    min-height: 100vh;
+}

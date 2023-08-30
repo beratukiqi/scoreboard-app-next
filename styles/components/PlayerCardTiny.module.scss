@@ -1,0 +1,27 @@
+@import "../mixins";
+
+.playerCardTiny {
+    @include flexCenter(column);
+    width: 100%;
+    gap: 0.2rem;
+    position: relative;
+
+    .playerCardTiny &__initials {
+        width: 3rem;
+        height: 2rem;
+        border-radius: 2rem;
+        font-weight: 600;
+    }
+
+    p {
+        @include flexCenter(row);
+        height: 2.5rem;
+    }
+
+    // Latest sum displays different
+    &__point:last-child {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: auto;
+    }
+}

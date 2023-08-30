@@ -1,0 +1,30 @@
+@import "../mixins";
+@import "../variables";
+
+.ContentContainer {
+    @include flexCenter(column);
+    background: $white-color;
+    padding: 1rem 1.2rem 1.5rem 1.2rem;
+    border-radius: 1.5rem;
+    gap: 0.5rem;
+
+    &__header {
+        @include flexSpaceBetween(row);
+        width: 100%;
+        background-image: linear-gradient(
+            to right,
+            rgb(161, 154, 154) 33%,
+            rgba(255, 255, 255, 0) 0%
+        );
+        background-position: bottom;
+        background-size: 7px 1px;
+        background-repeat: repeat-x;
+        padding-bottom: 0.7rem;
+        margin-bottom: 1rem;
+
+        h2 {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+    }
+}

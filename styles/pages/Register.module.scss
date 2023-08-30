@@ -1,0 +1,6 @@
+@import "../variables";
+@import "../mixins";
+
+.pageContainer {
+    @include pageContainer($background-color--setup);
+}

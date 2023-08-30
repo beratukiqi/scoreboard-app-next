@@ -1,0 +1,160 @@
+@import "mixins";
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+    font-family: $font-family-headings;
+    line-height: 1.5;
+    text-align: center;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    @include h1;
+}
+h2 {
+    @include h2;
+}
+h3 {
+    @include h3;
+}
+p {
+    @include p;
+}
+
+.scoreboard-container {
+    display: grid;
+    width: 100%;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.inputFieldBig {
+    color: rgb(34, 34, 34);
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 5rem;
+    border-style: none;
+    background-color: rgb(228, 233, 239);
+}
+
+.editNameInput {
+    color: rgb(34, 34, 34);
+    height: 3rem;
+    width: 100% !important;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 5rem;
+    border-style: none;
+    background-color: rgb(228, 233, 239);
+    position: absolute;
+    flex-grow: 1;
+}
+
+.tinyEditPointInput {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 5rem;
+    border-style: none;
+    bottom: 0;
+    background-color: rgb(228, 233, 239);
+}
+
+.pageContainer {
+    @include pageContainer($background-color--main);
+}
+
+.contentWrapper {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin: auto;
+
+    & > h2 {
+        font-size: 1.2rem;
+    }
+
+    & > header {
+        margin-bottom: 2rem;
+
+        p {
+            max-width: 75%;
+            margin: auto;
+            margin-top: 0.5rem;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+
+        padding: 2rem 4rem 3rem 4rem;
+        list-style: none;
+
+        li {
+            text-align: left;
+            padding: 0 1rem;
+        }
+    }
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        padding: 2rem 4rem 3rem 4rem;
+
+        li {
+            padding: 0 1rem;
+            text-align: left;
+        }
+    }
+
+    .shuffleButton {
+        @include flexCenter(row);
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem 2rem;
+        border-radius: 5rem;
+        border-style: none;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: white;
+        background-color: #302544;
+
+        svg {
+            width: 1.8rem;
+            fill: white;
+        }
+    }
+
+    .resetButton {
+        @include flexCenter(row);
+        @extend .shuffleButton;
+        background-color: #713636;
+
+        &-confirmed {
+            @extend .resetButton;
+            background-color: #36715d;
+        }
+        svg {
+            width: 1.5rem;
+            fill: white;
+        }
+    }
+}

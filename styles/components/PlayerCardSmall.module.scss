@@ -1,0 +1,10 @@
+@import "../mixins";
+
+.playerCardSmall {
+    @include flexSpaceBetween(row);
+    padding: 0 1.2rem;
+    border-radius: 2rem;
+    height: 2.2rem;
+    width: 100%;
+    font-weight: 600;
+}
