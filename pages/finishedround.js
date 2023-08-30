@@ -26,7 +26,7 @@ function FinishedRound() {
             />
             <main className="contentWrapper">
                 <Header
-                    title={"Round is over, count your points!"}
+                    title={"Count your points!"}
                     subTitle={"Beware of the not so talented mathematicians."}
                 />
 

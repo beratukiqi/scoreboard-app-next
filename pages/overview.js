@@ -63,10 +63,7 @@ function Overview() {
                     renderContent={() => <StartingPlayer />}
                 />
 
-                <PrimaryButton
-                    title={"Start a round"}
-                    path={"/finishedround"}
-                />
+                <PrimaryButton title={"Add points"} path={"/finishedround"} />
             </main>
         </section>
     );
