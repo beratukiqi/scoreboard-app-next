@@ -2,5 +2,5 @@
 @import "../mixins";
 
 .pageContainer {
-    @include pageContainer($background-color--roundFinished);
+    @include pageContainer($background-color--roundActive);
 }
